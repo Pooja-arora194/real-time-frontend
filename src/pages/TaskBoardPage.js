@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { io } from "socket.io-client";
 import { useParams } from "react-router-dom";
 import { socket } from "../sockets/socket"; // 🔥 IMPORTANT
 function Column({ title, tasks, setSelectedTask, setStatus }) {
