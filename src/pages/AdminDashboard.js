@@ -24,9 +24,9 @@ export default function AdminDashboard() {
   const [userId, setUserId] = useState("");
   const [selectedUsers, setSelectedUsers] = useState([]);
   useEffect(() => {
-    fetchUser();
-    fetchProject();
-  }, []);
+  fetchProject();
+  fetchUser();
+}, [fetchProject, fetchUser]);
   return (
     <div className="container py-4">
       <h2 className="mb-4 fw-bold">Admin Dashboard</h2>
